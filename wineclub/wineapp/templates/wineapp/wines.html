@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Wines</h2>
+<table class='table'>
+
+    <tr>
+        <th>Name</th>
+        <th>Winery</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Year</th>
+        <th>Price</th>
+    </tr>
+
+{% for item in wine_list %}
+    <tr>
+        <td>{{ item.winename }}</td>
+        <td>{{ item.winery }}</td>
+        <td>{{ item.winetype }}</td>
+        <td>{{ item.winedescription }}</td>
+        <td>{{ item.wineyear }}</td>
+        <td>{{ item.wineprice }}</td>
+    </tr>
+{% endfor %}
+
+</table>
+
+{% endblock %}
