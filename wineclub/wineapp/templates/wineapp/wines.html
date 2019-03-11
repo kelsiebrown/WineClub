@@ -15,7 +15,7 @@
 
 {% for item in wine_list %}
     <tr>
-        <td>{{ item.winename }}</td>
+        <td><a href="{% url 'details' id=item.id %}">{{ item.winename }}</a></td>
         <td>{{ item.winery }}</td>
         <td>{{ item.winetype }}</td>
         <td>{{ item.winedescription }}</td>

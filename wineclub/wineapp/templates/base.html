@@ -16,10 +16,15 @@
 <a class="navbar-brand" href="{% url 'index' %}">Home</a> 
 </div> 
 <ul class="nav navbar-nav"> 
-<li><a href="{%url 'winetypes'%}">Types</a></li>
-<li><a href="{%url 'wines'%}">Wines</a></li>
-<li><a href="{%url 'wineries'%}">Wineries</a></li>
-<li><a href="{%url 'events'%}">Events</a></li>
+<li><a href="{%url 'winetypes' %}">Types</a></li>
+<li><a href="{%url 'wines' %}">Wines</a></li>
+<li><a href="{%url 'wineries' %}">Wineries</a></li>
+<li><a href="{%url 'events' %}">Events</a></li>
+<li><a href="{%url 'reviews' %}">Reviews</a></li>
+<li><a href="{%url 'newevent' %}">Add Event</a></li>
+<li><a href="{%url 'newreview' %}">Add Review</a></li>
+<li><a href="{% url 'login' %}">Login</a></li>
+<li><a href="{% url 'logout' %}">Logout</a></li>
 </ul> 
 </div> 
 </nav> 
